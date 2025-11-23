@@ -1,0 +1,278 @@
+<!Doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pastry Mood Picker</title>
+<link rel="stylesheet" href="CSS/Pastry Mood Picker.css">
+</head>
+
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo-section">
+      <img src="IMAGES/logo.png" width="50" height="60" alt="Logo">
+	 
+    </div>
+	<div class="search-container">
+    <form action="#" method="GET" class="search-bar">
+      <input type="text" placeholder="Search..." name="q">
+      <button type="submit">search</button>
+    </form>
+  </div>
+
+    <ul class="nav-links">
+      <li><a href="Home page.html">Home Page</a></li>
+      <li><a href="About us.html">About Us</a></li>
+      <li><a href="Order Now.html">Order Now</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+      <li><a href="Pastry Mood Picker.html">Pastry Mood Picker</a></li>
+    </ul>
+
+    <div class="cart-container">
+      <div class="icon-cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+        </svg>
+        <span id="cart-count">0</span>
+      </div>
+    <div id="cart-modal" class="hidden">
+    <div class="cart-content">
+      <h2>Your Orders</h2>
+      <div id="cart-items"></div>
+      <p id="cart-total">Total: R0</p>
+      <button id="close-cart" style="
+        background:#c4a484; 
+        color:white; 
+        padding:10px 15px; 
+        border:none; 
+        border-radius:6px;
+        cursor:pointer;
+      ">Close</button>
+    </div>
+  </div>
+	 
+    </div>
+	
+	
+  </nav>
+</header>
+
+</div>
+<main>
+
+  <h1>Pastry Mood Picker</h1>
+  <p>Choose your mood and discover the perfect pastry</p>
+
+  <!-- Comfort -->
+  <section>
+    <h2>Comfort</h2>
+    <p>When you need something warm and cozy</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Chocolate Brownies</h3>
+        <img src="IMAGES/brownies.jpeg" alt="Brownie">
+        <p>Rich and chocolatey comfort<br>R25</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="25">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Macarons</h3>
+        <img src="IMAGES/Macrons.jpeg" alt="Macarons">
+        <p>Delicate and colorful<br>R7 Each</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="7">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Peanut Butter Cookie Bars</h3>
+        <img src="IMAGES/Peanut Butter Cookle Bars.jpeg" alt="Peanut Butter Cookie Bars">
+        <p>Creamy peanut butter with chocolate chips.<br>R20</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="20">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Strawberry Short Cakes</h3>
+        <img src="IMAGES/strawberry short cakes.jpeg" alt="Strawberry Short Cakes">
+        <p>buttery shortcakes with strawberries<br>R25</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="25">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Happy -->
+  <section>
+    <h2>Happy</h2>
+    <p>Bright pastries to match your joyful mood.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Croissant</h3>
+        <img src="IMAGES/croissant.jpg" alt="Croissant">
+        <p>Light and buttery happiness<br>R30</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="30">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Vanilla Cake Roll</h3>
+        <img src="IMAGES/Vanilla cake roll.jpg" alt="Vanilla Cake Roll">
+        <p>Colorful and refreshing<br>R40</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="40">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Éclairs</h3>
+        <img src="IMAGES/eclairs.jpeg" alt="Éclairs">
+        <p>Filled with rich pastry cream<br>R22</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="22">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Chocolate Chip Muffin</h3>
+        <img src="IMAGES/Choco Chip Muffins.jpeg" alt="Chocolate Chip Muffin">
+        <p>Fun and festive treats<br>R6</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="6">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Celebration -->
+  <section>
+    <h2>Celebration</h2>
+    <p>Perfect pastries for birthdays, milestones, and parties.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Black Forest Cake</h3>
+        <img src="IMAGES/BlackForest Gateau.webp" alt="Black Forest Cake">
+        <p>Classic celebration cake<br>R95.99</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="95.99">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Chocolate Mousse Cake</h3>
+        <img src="IMAGES/Chocolate Mousse Cake.jpeg" alt="Chocolate Mousse Cake">
+        <p>Rich and indulgent<br>R80</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="80">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Red Velvet Cake</h3>
+        <img src="IMAGES/Red Velvet Cake.jpeg" alt="Red Velvet Cake">
+        <p>Elegant and festive<br>R85</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="85">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Tiramisu Cake</h3>
+        <img src="IMAGES/Tiramisu cake.jpeg" alt="Tiramisu Cake">
+        <p>Italian classic layered with flavor<br>R88.95</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="88.95">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Relaxed -->
+  <section>
+    <h2>Relaxed</h2>
+    <p>Gentle flavors for a peaceful day.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Swiss Roll</h3>
+        <img src="IMAGES/swiss roll.jpeg" alt="Swiss Roll">
+        <p>Soft and creamy delight<br>R18.00</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="18">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Mooncake</h3>
+        <img src="IMAGES/Mooncake.jpeg" alt="Mooncake">
+        <p>Simple and calming<br>R23.95</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="23.95">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Chelsea Bun</h3>
+        <img src="IMAGES/chelsea bun.jpeg" alt="Chelsea Bun">
+        <p>Delicate bun made with sweet dough<br>R15.99</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="15.99">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <h3>Cannoli</h3>
+        <img src="IMAGES/cannoli.jpeg" alt="Cannoli">
+        <p>Crispy shell with creamy filling<br>R14.99</p>
+        <label>
+          Quantity: 
+          <input type="number" class="qty" value="0" min="0">
+        </label>
+        <button class="add-to-cart" data-price="14.99">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer style="background-color:#C4A484">
+  <p>&copy; 2025 Sweet Craving Pastry Shop. ST10480131.</p>
+</footer>
+<script src="javascript/pastrymood.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now</title>
+  <link rel="stylesheet" href="CSS/Order now.css">
+</head>
+<body>
+
+<header style="background-color: #C4A484; padding: 20px">
+  <nav style="display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <img src="IMAGES/logo.png" style="width:50px;height:60px;">
+    </div>
+    <ul>
+      <li><a href="Home Page.html">Home Page</a></li>
+      <li><a href="About us.html">About us</a></li>
+      <li><a href="Order Now.html">Order now</a></li>
+      <li><a href="contact us.html">Contact us</a></li>
+      <li><a href="Pastry Mood Picker.html">Pastry Mood Picker</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Pastry Order Form</h1>
+  <div class="checkout">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+
+    <div class="cart-total">
+      <strong>Total: </strong> <span id="cart-total">R0.00</span>
+    </div>
+
+    <h3>Customer Details</h3>
+    <form id="checkout-form">
+      <label>Name:</label>
+      <input type="text" required><br>
+
+      <label>Phone:</label>
+      <input type="tel" required><br>
+
+      <label>Address:</label>
+      <textarea required></textarea><br>
+
+      <button type="submit" class="checkout-btn">Place Order</button>
+    </form>
+  </div>
+</main>
+
+<footer style="background-color: #C4A484">
+  <p>&copy; 2025 Sweet Craving Pastry Shop. ST10480131.</p>
+</footer>
+
+<!--  Link JavaScript -->
+<script src="javascript/cart.js"></script>
+</body>
+</html>
